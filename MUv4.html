@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Alternative Exercise</title>
+		
+		<style>
+			td{
+				border: 1px solid black;
+			}
+			#display{
+				display: block;
+				border: 1px solid black;
+				margin: 20px auto;
+				width: 200px;
+				height: 200px;
+			}
+			td img{
+				height: 100px;
+				width: 100px;
+			}
+			table{
+				border-collapse: collapse;
+				margin: auto;
+			}
+			tr{
+				visibility: hidden;
+			}
+			.display-region{
+				visibility: visible;
+			}
+			.active{
+				background-color: red;
+			}
+			#options{
+				width: 400px;
+				margin: auto;
+				text-align: center
+			}
+			.btn-group{
+				margin: auto;
+			}
+			.selected{
+				background-color: orange;
+			}
+			button{
+				margin: 10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<img id="display" alt="display">
+		<table>
+			 
+			<tr id="kanto" class="display-region">
+				<td><img src="https://img.pokemondb.net/sprites/x-y/normal/ivysaur.png"/></td>
+				<td><img src="https://img.pokemondb.net/sprites/black-white/shiny/ninetales.png"/></td>
+				<td><img src="https://img.pokemondb.net/sprites/black-white/normal/dragonite.png"/></td>
+			</tr>
+			<tr id="johto">
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/152.png"/></td>
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/155.png"/></td>
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/158.png"/></td>
+			</tr>
+			<tr id="hoenn">
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/252.png"/></td>
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/255.png"/></td>
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/258.png"/></td>
+			</tr>
+			<tr id="sinnoh">
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/387.png"/></td>
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/390.png"/></td>
+				<td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/393.png"/></td>
+			</tr>
+		</table>
+		<div id="options">
+			<div class="btn-group">
+				<button id="kanto-btn" class="active">Kanto</button>
+				<button id="johto-btn">Johto</button>
+				<button id="hoenn-btn">Hoenn</button>
+				<button id="sinnoh-btn">Sinnoh</button>
+			</div>
+			<button id="select">Select A Row and Column</button>
+		</div>
+		<script>
+		</script>
+	</body>
+</html>
